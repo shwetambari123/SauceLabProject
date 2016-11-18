@@ -27,8 +27,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class StepDefn {
-  //WebDriver driver;
-
+ 
 
     WebDriver driver ;
 
@@ -42,8 +41,7 @@ public class StepDefn {
       DesiredCapabilities caps = DesiredCapabilities.chrome();
        caps.setCapability("platform","Windows XP");
        caps.setCapability("version","43.0");
-        //System.setProperty("webdriver.chrome.driver","src/main/browser/chromedriver.exe");
-       // driver= new ChromeDriver();
+
        driver = new RemoteWebDriver(new URL(URL),caps);
        driver.get("http://sbtechnos11.trial52.orangehrmlive.com/");
 
